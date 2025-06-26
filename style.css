@@ -1,0 +1,491 @@
+/* Boska Regular */
+@font-face {
+  font-family: 'Boska';
+  src: url('./assets/OTF/Boska-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Boska Bold */
+@font-face {
+  font-family: 'Boska';
+  src: url('./assets/OTF/Boska-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Boska Bold Italic */
+@font-face {
+  font-family: 'Boska';
+  src: url('./assets/OTF/Boska-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Boska Light */
+@font-face {
+  font-family: 'Boska';
+  src: url('./assets/OTF/Boska-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Boska Light Italic */
+@font-face {
+  font-family: 'Boska';
+  src: url('./assets/OTF/Boska-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Boska Medium */
+@font-face {
+  font-family: 'Boska';
+  src: url('./assets/OTF/Boska-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Boska Medium Italic */
+@font-face {
+  font-family: 'Boska';
+  src: url('./assets/OTF/Boska-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Boska Black */
+@font-face {
+  font-family: 'Boska';
+  src: url('./assets/OTF/Boska-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Boska Black Italic */
+@font-face {
+  font-family: 'Boska';
+  src: url('./assets/OTF/Boska-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Boska ExtraLight */
+@font-face {
+  font-family: 'Boska';
+  src: url('./assets/OTF/Boska-Extralight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Boska ExtraLight Italic */
+@font-face {
+  font-family: 'Boska';
+  src: url('./assets/OTF/Boska-ExtralightItalic.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Boska Italic */
+@font-face {
+  font-family: 'Boska';
+  src: url('./assets/OTF/Boska-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+html{
+  height: 100%;
+  margin: 0;
+}
+
+body{
+  font-family: 'Boska', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: justify;
+
+  height: 100%;
+  margin: 0;
+}
+
+
+
+
+
+
+/* Small: ≥576px */
+@media (min-width: 0px) {
+  .display-sm { font-size: 5rem; }
+
+  .img-carousel{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+  }
+
+  .page-0{
+    width: 100vw;
+    height: 92vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 20px;
+  }
+
+  /* From Uiverse.io by yaroslavas2001 */ 
+  .btn {
+    height: 4em;
+    width: 12em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 0px solid black;
+    cursor: pointer;
+  }
+
+  .wrapper {
+    height: 2em;
+    width: 8em;
+    position: relative;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text {
+    font-size: 17px;
+    font-weight: bold;
+    z-index: 1;
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.15);
+    transition: all 0.5s ease;
+  }
+
+  .flower {
+    display: grid;
+    grid-template-columns: 1em 1em;
+    position: absolute;
+    transition: grid-template-columns 0.8s ease;
+  }
+
+  .flower1 {
+    top: -12px;
+    left: -13px;
+    transform: rotate(5deg);
+  }
+
+  .flower2 {
+    bottom: -5px;
+    left: 8px;
+    transform: rotate(35deg);
+  }
+
+  .flower3 {
+    bottom: -15px;
+    transform: rotate(0deg);
+  }
+
+  .flower4 {
+    top: -14px;
+    transform: rotate(15deg);
+  }
+
+  .flower5 {
+    right: 11px;
+    top: -3px;
+    transform: rotate(25deg);
+  }
+
+  .flower6 {
+    right: -15px;
+    bottom: -15px;
+    transform: rotate(30deg);
+  }
+
+  .petal {
+    height: 1em;
+    width: 1em;
+    border-radius: 40% 70% / 7% 90%;
+    background: linear-gradient(#07a6d7, #93e0ee);
+    border: 0.5px solid #96d1ec;
+    z-index: 0;
+    transition: width 0.8s ease, height 0.8s ease;
+  }
+
+  .two {
+    transform: rotate(90deg);
+  }
+
+  .three {
+    transform: rotate(270deg);
+  }
+
+  .four {
+    transform: rotate(180deg);
+  }
+
+  .btn:hover .petal {
+    background: linear-gradient(#0761d7, #93bdee);
+    border: 0.5px solid #96b4ec;
+  }
+
+  .btn:hover .flower {
+    grid-template-columns: 1.5em 1.5em;
+  }
+
+  .btn:hover .flower .petal {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .btn:hover .text {
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  .btn:hover div.flower1 {
+    animation: 15s linear 0s normal none infinite running flower1;
+  }
+
+  @keyframes flower1 {
+    0% {
+      transform: rotate(5deg);
+    }
+
+    100% {
+      transform: rotate(365deg);
+    }
+  }
+
+  .btn:hover div.flower2 {
+    animation: 13s linear 1s normal none infinite running flower2;
+  }
+
+  @keyframes flower2 {
+    0% {
+      transform: rotate(35deg);
+    }
+
+    100% {
+      transform: rotate(-325deg);
+    }
+  }
+
+  .btn:hover div.flower3 {
+    animation: 16s linear 1s normal none infinite running flower3;
+  }
+
+  @keyframes flower3 {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .btn:hover div.flower4 {
+    animation: 17s linear 1s normal none infinite running flower4;
+  }
+
+  @keyframes flower4 {
+    0% {
+      transform: rotate(15deg);
+    }
+
+    100% {
+      transform: rotate(375deg);
+    }
+  }
+
+  .btn:hover div.flower5 {
+    animation: 20s linear 1s normal none infinite running flower5;
+  }
+
+  @keyframes flower5 {
+    0% {
+      transform: rotate(25deg);
+    }
+
+    100% {
+      transform: rotate(-335deg);
+    }
+  }
+
+  .btn:hover div.flower6 {
+    animation: 15s linear 1s normal none infinite running flower6;
+  }
+
+  @keyframes flower6 {
+    0% {
+      transform: rotate(30deg);
+    }
+
+    100% {
+      transform: rotate(390deg);
+    }
+  }
+
+
+
+  /* Page 1 content */
+  .page-1{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 20px;
+  }
+
+    .page-2{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: end;
+  }
+
+  .header {
+    font-family: 'Boska', sans-serif;
+    font-weight: bold;
+    font-size: 6rem;
+    text-align: center;
+  }
+
+   .background {
+    position: absolute;
+    top: 40;
+    right: 0;
+    z-index: -2;
+    width: 100%;
+  }
+
+  .dark-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 92vh;
+    z-index: -1;
+    background: #0000005f;
+  }
+
+  /* Card */
+  /* From Uiverse.io by gharsh11032000 */ 
+  .card-container {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .card-container::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    overflow: hidden;
+  }
+
+  .card .img-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #f89b2900 0%, #ff0f7b00 100% );
+    transition: scale 0.6s, rotate 0.6s, filter 1s;
+  }
+
+  .card .img-content svg {
+    width: 50px;
+    height: 50px;
+    fill: #e8e8e8;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+
+  .card .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    color: #e8e8e8;
+    padding: 20px;
+    line-height: 1.5;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(50px);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+
+  .card .content .heading {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .card:hover .content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .card:hover .img-content {
+    scale: 2.5;
+    rotate: 30deg;
+    filter: blur(7px);
+  }
+
+  .card:hover .img-content svg {
+    fill: transparent;
+  }
+
+  .container-kegiatan-seru{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    overflow-x: auto;
+    
+  }
+
+
+}
