@@ -97,6 +97,8 @@
 html{
   height: 100%;
   margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -105,7 +107,7 @@ body{
   padding: 0;
   box-sizing: border-box;
   background-color: #f0f0f0;
-  color: #333;
+  color: #ad8d8d;
   text-align: justify;
 
   height: 100%;
@@ -114,22 +116,19 @@ body{
 
 
 
-
-
-
 /* Small: ≥576px */
 @media (min-width: 0px) {
   .display-sm { font-size: 5rem; }
 
   .img-carousel{
-    height: 92vh;
+    height: 100vh;
     width: 100vw;
     object-fit: cover;
   }
 
   .page-0{
     width: 100vw;
-    height: 92vh;
+    height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -139,6 +138,13 @@ body{
     padding: 20px;
   }
 
+  .kolase-foto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+
   .header {
     font-family: 'Boska', sans-serif;
     font-weight: bold;
@@ -146,27 +152,34 @@ body{
     text-align: center;
   }
 
-   .background {
+  .background {
     position: absolute;
-    top: 40;
+    top: 0;
     right: 0;
     z-index: -2;
     width: 100%;
   }
 
+  .carousel-img-page-2{
+    width: 100%;
+    height: 250px;
+    border-radius: 16px;
+    object-fit: cover;
+  }
+
   .dark-overlay {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 92vh;
+    height: 100vh;
     z-index: -1;
     background: #0000005f;
   }
 
 
   /* From Uiverse.io by yaroslavas2001 */ 
-  .btn {
+  .btn-custom {
     height: 4em;
     width: 12em;
     display: flex;
@@ -367,5 +380,860 @@ body{
   }
 
 
+  @keyframes appear {
+    from{
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .animate{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%
+  }
+
+
+  /* Page embung */
+
+  .page-embung {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #191a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-image: url('https://res.cloudinary.com/da1otatdb/image/upload/v1751449896/embung-kaliaji_ezjnel.jpg');
+    background-size: cover;
+    background-position: center;
+
+    padding: 20px;
+  }
+
+  .overlay{
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 0;
+    
+    background-color: rgba(0, 0, 0, 0.288);
+  }
+
+  .card-tinggi{
+    width: 150px;
+    height: 300px;
+    border-radius: 16px;
+    background-color: white;
+  }
+
+  .card-kecil{
+    width: 140px;
+    height: 140px;
+    border-radius: 16px;
+    background-color: white;
+  }
+
+  .img-card{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+
+  .page-kegiatan{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #131313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    gap: 20px;
+
+    width: 100%;
+    height: 100%;
+    background-color: #1b1b1b;
+    background-image: radial-gradient(#292929 10%, transparent 10%),
+                        radial-gradient(#292929 10%, transparent 10%);
+    background-size: 100px 100px;
+    background-position: 0 0, 50px 50px;
+  }
+
+
+  /* Footer */
+  .logo-kkn{
+    width: 150px; 
+    height: 200px; 
+    object-fit: cover; 
+    aspect-ratio: 1/1;
+  }
+
+}
+
+
+@media (min-width: 391px) {
+  .display-sm { font-size: 5rem; }
+
+  .img-carousel{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+  }
+
+  .kolase-foto{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .carousel-img-page-2{
+    width: inherit;
+    height: 300px;
+    border-radius: 16px;
+    object-fit: cover;
+  }
+
+  .page-0{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 20px;
+  }
+
+  .header {
+    font-family: 'Boska', sans-serif;
+    font-weight: bold;
+    font-size: 6rem;
+    text-align: center;
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+    width: 100%;
+  }
+
+  .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: #0000005f;
+  }
+
+
+  /* From Uiverse.io by yaroslavas2001 */ 
+  .btn-custom {
+    height: 4em;
+    width: 12em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 0px solid black;
+    cursor: pointer;
+  }
+
+  .wrapper {
+    height: 2em;
+    width: 8em;
+    position: relative;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text {
+    font-size: 17px;
+    font-weight: bold;
+    z-index: 1;
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.15);
+    transition: all 0.5s ease;
+  }
+
+  .flower {
+    display: grid;
+    grid-template-columns: 1em 1em;
+    position: absolute;
+    transition: grid-template-columns 0.8s ease;
+  }
+
+  .flower1 {
+    top: -12px;
+    left: -13px;
+    transform: rotate(5deg);
+  }
+
+  .flower2 {
+    bottom: -5px;
+    left: 8px;
+    transform: rotate(35deg);
+  }
+
+  .flower3 {
+    bottom: -15px;
+    transform: rotate(0deg);
+  }
+
+  .flower4 {
+    top: -14px;
+    transform: rotate(15deg);
+  }
+
+  .flower5 {
+    right: 11px;
+    top: -3px;
+    transform: rotate(25deg);
+  }
+
+  .flower6 {
+    right: -15px;
+    bottom: -15px;
+    transform: rotate(30deg);
+  }
+
+  .petal {
+    height: 1em;
+    width: 1em;
+    border-radius: 40% 70% / 7% 90%;
+    background: linear-gradient(#07a6d7, #93e0ee);
+    border: 0.5px solid #96d1ec;
+    z-index: 0;
+    transition: width 0.8s ease, height 0.8s ease;
+  }
+
+  .two {
+    transform: rotate(90deg);
+  }
+
+  .three {
+    transform: rotate(270deg);
+  }
+
+  .four {
+    transform: rotate(180deg);
+  }
+
+  .btn:hover .petal {
+    background: linear-gradient(#0761d7, #93bdee);
+    border: 0.5px solid #96b4ec;
+  }
+
+  .btn:hover .flower {
+    grid-template-columns: 1.5em 1.5em;
+  }
+
+  .btn:hover .flower .petal {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .btn:hover .text {
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  .btn:hover div.flower1 {
+    animation: 15s linear 0s normal none infinite running flower1;
+  }
+
+  @keyframes flower1 {
+    0% {
+      transform: rotate(5deg);
+    }
+
+    100% {
+      transform: rotate(365deg);
+    }
+  }
+
+  .btn:hover div.flower2 {
+    animation: 13s linear 1s normal none infinite running flower2;
+  }
+
+  @keyframes flower2 {
+    0% {
+      transform: rotate(35deg);
+    }
+
+    100% {
+      transform: rotate(-325deg);
+    }
+  }
+
+  .btn:hover div.flower3 {
+    animation: 16s linear 1s normal none infinite running flower3;
+  }
+
+  @keyframes flower3 {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .btn:hover div.flower4 {
+    animation: 17s linear 1s normal none infinite running flower4;
+  }
+
+  @keyframes flower4 {
+    0% {
+      transform: rotate(15deg);
+    }
+
+    100% {
+      transform: rotate(375deg);
+    }
+  }
+
+  .btn:hover div.flower5 {
+    animation: 20s linear 1s normal none infinite running flower5;
+  }
+
+  @keyframes flower5 {
+    0% {
+      transform: rotate(25deg);
+    }
+
+    100% {
+      transform: rotate(-335deg);
+    }
+  }
+
+  .btn:hover div.flower6 {
+    animation: 15s linear 1s normal none infinite running flower6;
+  }
+
+  @keyframes flower6 {
+    0% {
+      transform: rotate(30deg);
+    }
+
+    100% {
+      transform: rotate(390deg);
+    }
+  }
+
+
+  @keyframes appear {
+    from{
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .animate{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%
+  }
+
+
+  /* Page embung */
+
+  .page-embung {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #191a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-image: url('https://res.cloudinary.com/da1otatdb/image/upload/v1751449896/embung-kaliaji_ezjnel.jpg');
+    background-size: cover;
+    background-position: center;
+
+    padding: 20px;
+  }
+
+  .text-1{
+    padding: 100px;
+  }
+
+  .overlay{
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 0;
+    
+    background-color: rgba(0, 0, 0, 0.288);
+  }
+
+  .card-tinggi{
+    width: 250px;
+    height: 500px;
+    border-radius: 16px;
+    background-color: white;
+  }
+
+  .card-kecil{
+    width: 240px;
+    height: 240px;
+    border-radius: 16px;
+    background-color: white;
+  }
+
+  .img-card{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+
+  .page-kegiatan{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #191a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    gap: 20px;
+
+    width: 100%;
+    height: 100%;
+    background-color: #1b1b1b;
+    background-image: radial-gradient(#494949 10%, transparent 10%),
+                        radial-gradient(#494949 10%, transparent 10%);
+    background-size: 100px 100px;
+    background-position: 0 0, 50px 50px;
+  }
+
+
+  /* Footer */
+  .logo-kkn{
+    width: 150px; 
+    height: 200px; 
+    object-fit: cover; 
+    aspect-ratio: 1/1;
+  }
+
+}
+
+@media (min-width: 769px) {
+  .display-sm { font-size: 5rem; }
+
+  .img-carousel{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+  }
+
+  .carousel-kegiatan{
+    width: 600px;
+    height: 500px;
+  }
+
+  .page-0{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 20px;
+  }
+
+  .carousel-img-page-2{
+    border-radius: 16px;
+    object-fit: cover;
+  }
+
+
+
+  .header {
+    font-family: 'Boska', sans-serif;
+    font-weight: bold;
+    font-size: 6rem;
+    text-align: center;
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+    width: 100%;
+  }
+
+  .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: #0000005f;
+  }
+
+  .carousel-img-page-2{
+    height: 500px;
+  }
+
+
+  /* From Uiverse.io by yaroslavas2001 */ 
+  .btn-custom {
+    height: 4em;
+    width: 12em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 0px solid black;
+    cursor: pointer;
+  }
+
+  .wrapper {
+    height: 2em;
+    width: 8em;
+    position: relative;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text {
+    font-size: 17px;
+    font-weight: bold;
+    z-index: 1;
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.15);
+    transition: all 0.5s ease;
+  }
+
+  .flower {
+    display: grid;
+    grid-template-columns: 1em 1em;
+    position: absolute;
+    transition: grid-template-columns 0.8s ease;
+  }
+
+  .flower1 {
+    top: -12px;
+    left: -13px;
+    transform: rotate(5deg);
+  }
+
+  .flower2 {
+    bottom: -5px;
+    left: 8px;
+    transform: rotate(35deg);
+  }
+
+  .flower3 {
+    bottom: -15px;
+    transform: rotate(0deg);
+  }
+
+  .flower4 {
+    top: -14px;
+    transform: rotate(15deg);
+  }
+
+  .flower5 {
+    right: 11px;
+    top: -3px;
+    transform: rotate(25deg);
+  }
+
+  .flower6 {
+    right: -15px;
+    bottom: -15px;
+    transform: rotate(30deg);
+  }
+
+  .petal {
+    height: 1em;
+    width: 1em;
+    border-radius: 40% 70% / 7% 90%;
+    background: linear-gradient(#07a6d7, #93e0ee);
+    border: 0.5px solid #96d1ec;
+    z-index: 0;
+    transition: width 0.8s ease, height 0.8s ease;
+  }
+
+  .two {
+    transform: rotate(90deg);
+  }
+
+  .three {
+    transform: rotate(270deg);
+  }
+
+  .four {
+    transform: rotate(180deg);
+  }
+
+  .btn:hover .petal {
+    background: linear-gradient(#0761d7, #93bdee);
+    border: 0.5px solid #96b4ec;
+  }
+
+  .btn:hover .flower {
+    grid-template-columns: 1.5em 1.5em;
+  }
+
+  .btn:hover .flower .petal {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .btn:hover .text {
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  .btn:hover div.flower1 {
+    animation: 15s linear 0s normal none infinite running flower1;
+  }
+
+  @keyframes flower1 {
+    0% {
+      transform: rotate(5deg);
+    }
+
+    100% {
+      transform: rotate(365deg);
+    }
+  }
+
+  .btn:hover div.flower2 {
+    animation: 13s linear 1s normal none infinite running flower2;
+  }
+
+  @keyframes flower2 {
+    0% {
+      transform: rotate(35deg);
+    }
+
+    100% {
+      transform: rotate(-325deg);
+    }
+  }
+
+  .btn:hover div.flower3 {
+    animation: 16s linear 1s normal none infinite running flower3;
+  }
+
+  @keyframes flower3 {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .btn:hover div.flower4 {
+    animation: 17s linear 1s normal none infinite running flower4;
+  }
+
+  @keyframes flower4 {
+    0% {
+      transform: rotate(15deg);
+    }
+
+    100% {
+      transform: rotate(375deg);
+    }
+  }
+
+  .btn:hover div.flower5 {
+    animation: 20s linear 1s normal none infinite running flower5;
+  }
+
+  @keyframes flower5 {
+    0% {
+      transform: rotate(25deg);
+    }
+
+    100% {
+      transform: rotate(-335deg);
+    }
+  }
+
+  .btn:hover div.flower6 {
+    animation: 15s linear 1s normal none infinite running flower6;
+  }
+
+  @keyframes flower6 {
+    0% {
+      transform: rotate(30deg);
+    }
+
+    100% {
+      transform: rotate(390deg);
+    }
+  }
+
+
+  @keyframes appear {
+    from{
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .animate{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%
+  }
+
+
+  /* Page embung */
+
+  .page-embung {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #191a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-image: url('https://res.cloudinary.com/da1otatdb/image/upload/v1751449896/embung-kaliaji_ezjnel.jpg');
+    background-size: cover;
+    background-position: center;
+
+    padding: 20px;
+  }
+
+  .text-1{
+    padding-top: 0px;
+    padding-right: 400px;
+    padding-left: 400px;
+  }
+
+  .overlay{
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 0;
+    
+    background-color: rgba(0, 0, 0, 0.288);
+  }
+
+  .card-tinggi{
+    width: 250px;
+    height: 500px;
+    border-radius: 16px;
+    background-color: white;
+  }
+
+  .card-kecil{
+    width: 240px;
+    height: 240px;
+    border-radius: 16px;
+    background-color: white;
+  }
+
+  .img-card{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+
+  .page-kegiatan{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #191a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    gap: 100px;
+
+    width: 100%;
+    height: 100%;
+    background-color: #1b1b1b;
+    background-image: radial-gradient(#494949 10%, transparent 10%),
+                        radial-gradient(#494949 10%, transparent 10%);
+    background-size: 100px 100px;
+    background-position: 0 0, 50px 50px;
+  }
+
+  .kolase-foto{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  /* Footer */
+  .logo-kkn{
+    width: 150px; 
+    height: 200px; 
+    object-fit: cover; 
+    aspect-ratio: 1/1;
+  }
 
 }
