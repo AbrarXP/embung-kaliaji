@@ -92,7 +92,7 @@
     <div class="page-embung">
       <div class="overlay"></div>
       <h2 class="fw-bold fs-1 animate">Tentang Embung Kaliaji</h2>
-      <div class="text-1 animate">
+      <div class="w-75 animate" style="overflow-y: auto;">
         <p style="text-align: justify;">
           Embung Kaliaji adalah sebuah embung yang terletak di Desa Sangurejo, Kecamatan Tempel, Kabupaten Sleman, Yogyakarta. Embung ini merupakan salah satu destinasi wisata alam yang menawarkan pemandangan indah dan udara sejuk. 
           Embung Kaliaji dikelola oleh Kelompok Sadar Wisata (Pokdarwis) Desa Sangurejo dan telah menjadi tempat rekreasi yang populer bagi warga sekitar maupun wisatawan.
@@ -103,58 +103,74 @@
       </div>
     </div>
 
-    <div class="page-kegiatan">
-      <h2 class="fw-bold fs-1 mt-5 animate">Kegiatan Kami</h2>
-      <div class="kolase-foto">
-        <div class="row">
-          <div class="col">
-            <div id="carouselAutoSlide" class="carousel carousel-kegiatan slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752237968/cloud-10_yagtmk.png" class="d-block carousel-img-page-2" alt="Slide 1">
-                </div>
-                <div class="carousel-item">
-                  <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752237998/cloud-11_teomex.png" class="d-block carousel-img-page-2" alt="Slide 2">
-                </div>
-                <div class="carousel-item">
-                  <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752238008/cloud-9_miwz31.png" class="d-block carousel-img-page-2" alt="Slide 3">
-                </div>
-              </div>
+   <div class="container-fluid p-5 background-1">
+  <h2 class="fw-bold fs-1 text-center mb-4 animate">Kegiatan Kami</h2>
 
-              <!-- Controls -->
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoSlide" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoSlide" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-              </button>
-
-              <!-- Indicators -->
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselAutoSlide" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#carouselAutoSlide" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#carouselAutoSlide" data-bs-slide-to="2"></button>
+  <div class="container animat" style="overflow-y: auto; height: 90vh;">
+  <div class="row g-4">
+    <!-- Kiri: Carousel + Gambar 1 -->
+    <div class="col-lg-6">
+      <div class="row g-3 flex-column">
+        <!-- Carousel -->
+        <div class="col">
+          <div id="carouselAutoSlide" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752237968/cloud-10_yagtmk.png"
+                  class="d-block w-100 rounded" style="height: 250px; object-fit: cover;" alt="Slide 1">
               </div>
+              <div class="carousel-item">
+                <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752237998/cloud-11_teomex.png"
+                  class="d-block w-100 rounded" style="height: 250px; object-fit: cover;" alt="Slide 2">
+              </div>
+              <div class="carousel-item">
+                <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752238008/cloud-9_miwz31.png"
+                  class="d-block w-100 rounded" style="height: 250px; object-fit: cover;" alt="Slide 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoSlide" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoSlide" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselAutoSlide" data-bs-slide-to="0" class="active"
+                aria-current="true"></button>
+              <button type="button" data-bs-target="#carouselAutoSlide" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#carouselAutoSlide" data-bs-slide-to="2"></button>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <div class="card-tinggi">
-              <img class="img-fluid img-card" src="https://res.cloudinary.com/da1otatdb/image/upload/v1751029925/haejibnuoeosbaojvght.jpg" alt="">
-            </div>
-          </div>
-          <div class="col">
-            <div class="card-kecil">
-              <img class="img-fluid img-card" src="https://res.cloudinary.com/da1otatdb/image/upload/v1751549318/cloud-8_wi7n2g.png" alt="">
-            </div>
-            <div class="card-kecil mt-3">
-              <img class="img-fluid img-card" src="https://res.cloudinary.com/da1otatdb/image/upload/v1751549129/cloud-6_dde1d5.png" alt="">
-            </div>
-          </div>
+
+        <!-- Gambar bawah Carousel -->
+        <div class="col">
+          <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1751029925/haejibnuoeosbaojvght.jpg"
+            class="img-fluid rounded w-100" style="height: 250px; object-fit: cover;" alt="Image 1">
         </div>
       </div>
     </div>
+
+    <!-- Kanan: 2 Gambar -->
+    <div class="col-lg-6">
+      <div class="row g-3 flex-column">
+        <div class="col">
+          <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1751549318/cloud-8_wi7n2g.png"
+            class="img-fluid rounded w-100" style="height: 250px; object-fit: cover;" alt="Image 2">
+        </div>
+        <div class="col">
+          <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1751549129/cloud-6_dde1d5.png"
+            class="img-fluid rounded w-100" style="height: 250px; object-fit: cover;" alt="Image 3">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
 
 
 

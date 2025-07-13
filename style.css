@@ -116,6 +116,19 @@ body{
 
 
 
+/* From Uiverse.io by uiverse-astronaut */ 
+.background-1 {
+  color: rgb(21, 21, 21);
+  width: 100vw;
+  height: 120vh;
+  /* Add your background pattern here */
+  background-color: #f0f0f0;
+  background-image: radial-gradient(#f0f0f0 10%, transparent 10%),
+                      radial-gradient(#f0f0f0 10%, transparent 10%);
+  background-size: 100px 100px;
+  background-position: 0 0, 50px 50px;
+}
+
 /* Small: ≥576px */
 @media (min-width: 0px) {
   .display-sm { font-size: 5rem; }
