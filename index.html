@@ -19,12 +19,15 @@
 
 <body class="bg-dark text-light">
 
-    <div class="page-0">
+    <div class="container-fluid">
       <!-- Carousel  -->
       <div id="carouselExampleAutoplaying" class="carousel slide background" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img loading="lazy" src="https://res.cloudinary.com/da1otatdb/image/upload/v1751029910/xzwbfniroa1wdzayn5gl.jpg" class="d-block img-carousel" alt="Pemandangan Embung Kaliaji di Sleman Yogyakarta">
+          </div>
+          <div class="carousel-item">
+            <img loading="lazy" src="https://res.cloudinary.com/da1otatdb/image/upload/v1751029910/xzwbfniroa1wdzayn5gl.jpg" class="d-block  img-carousel" alt="Pemandangan Embung Kaliaji di Sleman Yogyakarta">
           </div>
           <div class="carousel-item">
             <img loading="lazy" src="https://res.cloudinary.com/da1otatdb/image/upload/v1751029925/haejibnuoeosbaojvght.jpg" class="d-block  img-carousel" alt="Pemandangan Embung Kaliaji di Sleman Yogyakarta">
@@ -36,10 +39,10 @@
       </div>
 
       <!-- Dark overlay -->
-      <div class="dark-overlay"></div>
+      <div class="dark-overlay" style="width: 100%;"></div>
 
       <!-- Tipografi -->
-      <div class="container" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
+      <div class="w-100" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
         <div class="">
           <div class=""><h1 class="header">Embung Kaliaji</h1></div>
         </div>
@@ -89,12 +92,206 @@
       </div>
     </div>
 
+    <div class="w-100 p-5 background-1">
+      <h2 class="fw-bold fs-1 text-center mb-4 animate">Keindahan Embung Kaliaji</h2>
+
+      <div class="w-100 animate" style="overflow-y: auto; overflow-x: hidden; height: 90vh;">
+        <div class="row g-4">
+          <!-- Kiri: Carousel + Gambar bawah -->
+          <div class="col-lg-6">
+            <div class="d-flex flex-column gap-3">
+
+              <!-- Carousel -->
+              <div>
+                <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752544333/IMG_20250714_172545_uyg0du.jpg"
+                    class="img-fluid rounded w-100" style="height: 500px; object-fit: cover;" alt="Image 2">
+              </div>
+
+              <!-- Gambar bawah Carousel -->
+              <div>
+                <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752544288/IMG_20250714_172459_o6ytt6.jpg"
+                    class="img-fluid rounded w-100" style="height: 500px; object-fit: cover;" alt="Image 1">
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Kanan: Dua gambar bertumpuk -->
+          <div class="col-lg-6">
+            <div class="d-flex flex-column gap-3">
+              
+              <div>
+                <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752544230/IMG_20250714_172605_h5sm88.jpg"
+                    class="img-fluid rounded w-100" style="height: 500px; object-fit: cover;" alt="Image 2">
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752544191/IMG_20250714_172522_z26eb1.jpg"
+                    class="img-fluid rounded w-100" style="height: 500px; object-fit: cover;" alt="Image 3">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-100 p-5 background-2">
+      <h2 class="fw-bold fs-1 text-start mb-4 animate">Paket Kegiatan</h2>
+      <p class="text-mute w-100  mb-4 animate" style="text-align:justify;">
+        Embung Kaliaji menawarkan berbagai paket kegiatan seru untuk keluarga, komunitas, maupun perusahaan. Mulai dari camping, outbound, makrab, hingga wedding, semua dapat dinikmati di tengah suasana alam yang asri dan menenangkan. Setiap paket dirancang untuk memberikan pengalaman tak terlupakan bersama orang-orang tercinta di lingkungan yang nyaman dan aman.
+      </p></p>
+
+      <div class="w-100 animate" style="overflow-y: auto; overflow-x: hidden; height: 50vh;">
+        <div class="row g-4">
+          <!-- Kiri: Carousel + Gambar bawah -->
+          <div class="col-lg-6">
+            <div class="d-flex flex-column gap-3">
+
+            <div class="image-overlay-container" data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                data-img="https://res.cloudinary.com/da1otatdb/image/upload/v1752238008/cloud-9_miwz31.png">
+
+              <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752238008/cloud-9_miwz31.png"
+                  class="img-fluid rounded"
+                  alt="Paket Camping">
+
+              <div class="image-overlay">
+                <span class="image-overlay-text">Kampung Pramuka</span>
+              </div>
+            </div>
+
+            <div class="image-overlay-container" data-bs-toggle="modal"
+                data-bs-target="#imageModal-2"
+                data-img="https://res.cloudinary.com/da1otatdb/image/upload/v1751468994/cloud-1_xbk1kq.png">
+
+              <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1751468994/cloud-1_xbk1kq.png"
+                  class="img-fluid rounded"
+                  alt="Paket Camping">
+
+              <div class="image-overlay">
+                <span class="image-overlay-text">Family Camping</span>
+              </div>
+            </div>
+
+             <div class="image-overlay-container" data-bs-toggle="modal"
+                data-bs-target="#imageModal-5"
+                data-img="https://res.cloudinary.com/da1otatdb/image/upload/v1751029921/nojfvkha5fjldsrjzmo8.jpg">
+
+              <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1751029921/nojfvkha5fjldsrjzmo8.jpg"
+                  class="img-fluid rounded"
+                  alt="Paket Camping">
+
+              <div class="image-overlay">
+                <span class="image-overlay-text">Kedamaian Sempurna</span>
+              </div>
+            </div>
+
+            </div>
+          </div>
+
+          <!-- Kanan: Dua gambar bertumpuk -->
+          <div class="col-lg-6">
+            <div class="d-flex flex-column gap-3">
+              
+            <div class="image-overlay-container" data-bs-toggle="modal"
+                data-bs-target="#imageModal-3"
+                data-img="https://res.cloudinary.com/da1otatdb/image/upload/v1751511848/cloud-4_en0l50.png">
+
+              <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1751511848/cloud-4_en0l50.png"
+                  class="img-fluid rounded"
+                  alt="Paket Camping">
+
+              <div class="image-overlay">
+                <span class="image-overlay-text">Outbound</span>
+              </div>
+            </div>
+
+            <div class="image-overlay-container" data-bs-toggle="modal"
+                data-bs-target="#imageModal-4"
+                data-img="https://res.cloudinary.com/da1otatdb/image/upload/v1752553665/3a485edf-2c83-4bfa-8a71-d8c613031e15_vjww5c.jpg">
+
+              <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752553665/3a485edf-2c83-4bfa-8a71-d8c613031e15_vjww5c.jpg"
+                  class="img-fluid rounded"
+                  alt="Paket Camping">
+
+              <div class="image-overlay">
+                <span class="image-overlay-text">Makrab</span>
+              </div>
+            </div>
+
+            <div class="image-overlay-container" data-bs-toggle="modal"
+                data-bs-target="#imageModal-6"
+                data-img="https://res.cloudinary.com/da1otatdb/image/upload/v1752567568/samantha-gades-x40Q9jrEVT0-unsplash_fito7f.jpg">
+
+              <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752567568/samantha-gades-x40Q9jrEVT0-unsplash_fito7f.jpg"
+                  class="img-fluid rounded"
+                  alt="Paket Camping">
+
+              <div class="image-overlay">
+                <span class="image-overlay-text">Wedding</span>
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="mt-5 fw-bold fs-1 text-end animate">Paket Makanan</h2>
+      <p class="text-mute text-end mb-4 animate">*Hanya berlaku jika membeli paket kegiatan</p>
+
+      <div class="w-100 animate" style="overflow-y: auto; overflow-x: hidden; height: 50vh;">
+        <div class="row g-4">
+          <!-- Kiri: Carousel + Gambar bawah -->
+          <div class="col-lg-6">
+            <div class="d-flex flex-column gap-3">
+
+            <div class="image-overlay-container" data-bs-toggle="modal"
+                  data-bs-target="#imageModal-7"
+                  data-img="https://res.cloudinary.com/da1otatdb/image/upload/v1752580114/lily-banse--YHSwy6uqvk-unsplash_ummupy.jpg">
+
+                <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752580114/lily-banse--YHSwy6uqvk-unsplash_ummupy.jpg"
+                    class="img-fluid rounded"
+                    alt="Paket Camping">
+
+                <div class="image-overlay">
+                  <span class="image-overlay-text">Paket 1</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Kanan: Dua gambar bertumpuk -->
+          <div class="col-lg-6">
+            <div class="d-flex flex-column gap-3">
+              
+             <div class="image-overlay-container" data-bs-toggle="modal"
+                data-bs-target="#imageModal-8"
+                data-img="https://res.cloudinary.com/da1otatdb/image/upload/v1752580114/lily-banse--YHSwy6uqvk-unsplash_ummupy.jpg">
+
+              <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752580114/lily-banse--YHSwy6uqvk-unsplash_ummupy.jpg"
+                  class="img-fluid rounded"
+                  alt="Paket Camping">
+
+              <div class="image-overlay">
+                <span class="image-overlay-text">Paket 2</span>
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
     <div class="page-embung">
       <div class="overlay"></div>
       <h2 class="fw-bold fs-1 animate">Tentang Embung Kaliaji</h2>
-      <div class="w-75 w-lg-50 animate" style="overflow-y: auto;">
+      <div class="animate" style="overflow-y: auto;  width: 50vw;">
         <p style="text-align: justify;">
-          Embung Kaliaji adalah sebuah embung yang terletak di Desa Sangurejo, Kecamatan Tempel, Kabupaten Sleman, Yogyakarta. Embung ini merupakan salah satu destinasi wisata alam yang menawarkan pemandangan indah dan udara sejuk. 
+          Embung Kaliaji adalah sebuah embung yang terletak di Desa Sangurejo, Kecamatan Turi, Kabupaten Sleman, Yogyakarta. Embung ini merupakan salah satu destinasi wisata alam yang menawarkan pemandangan indah dan udara sejuk. 
           Embung Kaliaji dikelola oleh Kelompok Sadar Wisata (Pokdarwis) Desa Sangurejo dan telah menjadi tempat rekreasi yang populer bagi warga sekitar maupun wisatawan.
         </p>
         <p style="text-align: justify;">
@@ -103,76 +300,124 @@
       </div>
     </div>
 
-   <div class="container-fluid p-5 background-1">
-  <h2 class="fw-bold fs-1 text-center mb-4 animate">Kegiatan Kami</h2>
+    <div class="w-100 p-5 background-1">
+      <h2 class="fw-bold fs-1 text-center mb-4 animate">Kegiatan Kami</h2>
 
-  <div class="container animat" style="overflow-y: auto; height: 90vh;">
-  <div class="row g-4">
-    <!-- Kiri: Carousel + Gambar 1 -->
-    <div class="col-lg-6">
-      <div class="row g-3 flex-column">
-        <!-- Carousel -->
-        <div class="col">
-          <div id="carouselAutoSlide" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752237968/cloud-10_yagtmk.png"
-                  class="d-block w-100 rounded" style="height: 250px; object-fit: cover;" alt="Slide 1">
+      <div class="w-100 animate" style="overflow-y: auto; overflow-x: hidden; height: 90vh;">
+        <div class="row g-4">
+          <!-- Kiri: Carousel + Gambar bawah -->
+          <div class="col-lg-12">
+            <div class="d-flex flex-column gap-3">
+              <!-- Carousel -->
+              <div>
+                <div id="carouselAutoSlide" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752552135/WhatsApp_Image_2025-06-26_at_10.54.51_AM_xlnk5a.jpg"
+                          class="d-block w-100 rounded" style="height: 500px; object-fit:cover;" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752552342/bdc5f69a-7eb7-4127-8ab1-c4342fb3ae40_u4abtx.jpg"
+                          class="d-block w-100 rounded" style="height: 500px; object-fit:cover;" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752552365/f71fa117-1575-43c6-8f52-bd8f615cba8f_cjrmdl.jpg"
+                          class="d-block w-100 rounded" style="height: 500px; object-fit: cover;" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752552319/666ed9a2-066a-4aa3-bea5-b3a3ad8aef8a_zuelns.jpg"
+                          class="d-block w-100 rounded" style="height: 500px; object-fit: cover;" alt="Slide 3">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoSlide" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoSlide" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselAutoSlide" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                    <button type="button" data-bs-target="#carouselAutoSlide" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselAutoSlide" data-bs-slide-to="2"></button>
+                  </div>
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752237998/cloud-11_teomex.png"
-                  class="d-block w-100 rounded" style="height: 250px; object-fit: cover;" alt="Slide 2">
+
+              <!-- Gambar bawah Carousel -->
+              <div class="row g-3 animate">
+                <section class="col-lg-6 py-5" id="galeri">
+                  <div class="container">
+                    <h5 class="fw-bold fs-4 text-center mb-5">Kegiatan Pramuka</h5>
+                    <div class="masonry-grid">
+                      <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1751510035/cloud-2_n2qkoy.png" alt="Kegiatan pramuka di embung kaliaji">
+                      <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752238008/cloud-9_miwz31.png" alt="Upacara pramuka embung kaliaji">
+                      <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1751512219/cloud-5_xkkb79.png" alt="Upcara pramuka">
+                      <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752553665/3a485edf-2c83-4bfa-8a71-d8c613031e15_vjww5c.jpg" alt="Kegiatan pramuka malam hari di embung kaliaji">
+                      <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752554389/bec74009-01a4-40b0-8865-1bcabcedcc29_znb6xl.jpg" alt="Kegiatan pramuka malam hari di embung kaliaji">
+                    </div>
+                  </div>
+                </section>
+                <section class="col-lg-6 py-5" id="galeri">
+                  <div class="container">
+                    <h5 class="fw-bold fs-4 text-center mb-5">Kegiatan Outbound</h5>
+                    <div class="masonry-grid">
+                      <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752237998/cloud-11_teomex.png" alt="Kegiatan Outbond di embung kaliaji">
+                      <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752237968/cloud-10_yagtmk.png" alt="Outbond di embung kaliaji dengan seru">
+                      <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1751549318/cloud-8_wi7n2g.png" alt="Outbond menyenangkan di embung kaliaji">
+                      <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752237968/cloud-10_yagtmk.png" alt="Outbond sehat di embung kaliaji">
+                      <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1751511848/cloud-4_en0l50.png" alt="Outbond sehat bermain air di embung kaliaji">
+                      <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752555227/WhatsApp_Image_2025-06-26_at_10.59.18_AM_akneyt.jpg" alt="Outbond sehat di embung kaliaji">
+                      <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1751510028/cloud-3_mkdpka.png" alt="Outbond sehat di embung kaliaji">
+                    </div>
+                  </div>
+                </section>
               </div>
-              <div class="carousel-item">
-                <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1752238008/cloud-9_miwz31.png"
-                  class="d-block w-100 rounded" style="height: 250px; object-fit: cover;" alt="Slide 3">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoSlide" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoSlide" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselAutoSlide" data-bs-slide-to="0" class="active"
-                aria-current="true"></button>
-              <button type="button" data-bs-target="#carouselAutoSlide" data-bs-slide-to="1"></button>
-              <button type="button" data-bs-target="#carouselAutoSlide" data-bs-slide-to="2"></button>
             </div>
           </div>
-        </div>
-
-        <!-- Gambar bawah Carousel -->
-        <div class="col">
-          <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1751029925/haejibnuoeosbaojvght.jpg"
-            class="img-fluid rounded w-100" style="height: 250px; object-fit: cover;" alt="Image 1">
+          
         </div>
       </div>
     </div>
 
-    <!-- Kanan: 2 Gambar -->
-    <div class="col-lg-6">
-      <div class="row g-3 flex-column">
-        <div class="col">
-          <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1751549318/cloud-8_wi7n2g.png"
-            class="img-fluid rounded w-100" style="height: 250px; object-fit: cover;" alt="Image 2">
-        </div>
-        <div class="col">
-          <img src="https://res.cloudinary.com/da1otatdb/image/upload/v1751549129/cloud-6_dde1d5.png"
-            class="img-fluid rounded w-100" style="height: 250px; object-fit: cover;" alt="Image 3">
+        <div class="w-100 p-5 background-1">
+      <h2 class="fw-bold fs-1 text-center mb-4 animate">Lokasi Embung Kaliaji</h2>
+
+      <div class="w-100 animate" style="overflow-y: auto; overflow-x: hidden; height: 90vh;">
+        <div class="row g-4">
+          <!-- Kiri: Carousel + Gambar bawah -->
+          <div class="col-lg-12">
+            <div class="d-flex flex-column gap-3">
+              <!-- Map -->
+               <iframe class="w-100 shadow-md shadow-hover" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.3199220282163!2d110.37348867455182!3d-7.648706175668058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5fcb06b74de1%3A0x145b490faec18208!2sEmbung%20Kaliaji!5e0!3m2!1sid!2sid!4v1752580872162!5m2!1sid!2sid"  height="250" style="border:0; border-radius: 16px; padding: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              <!-- Gambar bawah Carousel -->
+              <div class="row g-3 animate">
+                <section class="col-lg-6 py-5" id="galeri">
+                  <div class="container card shadow-md shadow-hover border-0 p-5" style="border-radius: 16px;">
+                    <h5 class="fw-bold fs-4 text-center "><i class='bxr  bx-location'  ></i> Alamat Lengkap</h5>
+                    <hr>
+                    <p>
+                      Embung Kaliaji, Dusun Kaliaji, Desa Sangurejo, Kecamatan Turi, Kabupaten Sleman, Yogyakarta 55572.
+                    </p>
+                  </div>
+                </section>
+                <section class="col-lg-6 py-5" id="galeri">
+                  <div class="container card shadow-md shadow-hover border-0 p-5" style="border-radius: 16px;">
+                    <h5 class="fw-bold fs-4 text-center"><i class='bxr  bx-phone'  ></i> Kontak Whatsapp</h5>
+                    <hr>
+                    <ul>
+                      <li>Mas Nur (+62 851-0060-2092)</li>
+                      <li>Mas Bintang (+62 823-2538-8845)</li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
-  </div>
-</div>
-
-</div>
-
-
-
-
-
 
     <!-- Footer -->
 <!-- Remove the container if you want to extend the Footer to full width. -->
@@ -204,8 +449,12 @@
           <h5 class="text-uppercase mb-4">Kredit</h5>
   
           <p style="text-align: center;">
-           Drone view Embung Kaliaji by <a href="https://www.instagram.com/isnansyas" target="_blank" rel="noopener noreferrer">@isnansyas</a>.<br>
+           Drone view Embung Kaliaji oleh <a href="https://www.instagram.com/isnansyas" target="_blank" rel="noopener noreferrer">@isnansyas</a>.<br>
           </p>
+          <p class="">Foto Wedding oleh <a href="https://unsplash.com/@sincerelymedia" target="_blank" rel="noopener">Samantha Gades</a> di Unsplash</p>
+          <p class="">Foto Makanan oleh <a href="https://unsplash.com/@lvnatikk" target="_blank" rel="noopener">Lily Banse</a> di Unsplash</p>
+          <p class="">Foto Salad oleh <a href="https://unsplash.com/@annapelzer" target="_blank" rel="noopener">Annapelzer</a> di Unsplash</p>
+          
 
         </div>
         <!--Grid column-->
@@ -216,6 +465,123 @@
   </footer>
   
 </div>
+
+
+<!-- Modal Gambar -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content border-0">
+      <div class="modal-body p-0 d-flex justify-content-center align-items-center">
+        <img id="modalImage"
+             src="https://res.cloudinary.com/da1otatdb/image/upload/v1752557708/paket_pramuka_kevdpp.png"
+             alt="Popup"
+             class="img-fluid rounded shadow"
+             style="max-width: 100%; height: 80vh;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imageModal-2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content border-0">
+      <div class="modal-body p-0 d-flex justify-content-center align-items-center">
+        <img id="modalImage"
+             src="https://res.cloudinary.com/da1otatdb/image/upload/v1752557709/paket_camping_family_mts32z.png"
+             alt="Popup"
+             class="img-fluid rounded shadow"
+             style="max-width: 100%; height: 80vh;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imageModal-3" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content border-0">
+      <div class="modal-body p-0 d-flex justify-content-center align-items-center">
+        <img id="modalImage"
+             src="https://res.cloudinary.com/da1otatdb/image/upload/v1752557477/paket_outbound_ugihte.png"
+             alt="Popup"
+             class="img-fluid rounded shadow"
+             style="max-width: 100%; height: 80vh;">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="imageModal-4" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content border-0">
+      <div class="modal-body p-0 d-flex justify-content-center align-items-center">
+        <img id="modalImage"
+             src="https://res.cloudinary.com/da1otatdb/image/upload/v1752557678/paket_makrab_cgppu1.png"
+             alt="Popup"
+             class="img-fluid rounded shadow"
+             style="max-width: 100%; height: 80vh;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imageModal-5" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content border-0">
+      <div class="modal-body p-0 d-flex justify-content-center align-items-center">
+        <img id="modalImage"
+             src="https://res.cloudinary.com/da1otatdb/image/upload/v1752557615/paket_kedamaian_qvd4n5.png"
+             alt="Popup"
+             class="img-fluid rounded shadow"
+             style="max-width: 100%; height: 80vh;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imageModal-6" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content border-0">
+      <div class="modal-body p-0 d-flex justify-content-center align-items-center">
+        <img id="modalImage"
+             src="https://res.cloudinary.com/da1otatdb/image/upload/v1752557468/paket_wedding_usotlz.png"
+             alt="Popup"
+             class="img-fluid rounded shadow"
+             style="max-width: 100%; height: 80vh;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imageModal-7" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content border-0">
+      <div class="modal-body p-0 d-flex justify-content-center align-items-center">
+        <img id="modalImage"
+             src="https://res.cloudinary.com/da1otatdb/image/upload/v1752569026/makanan_mxe9io.png"
+             alt="Popup"
+             class="img-fluid rounded shadow"
+             style="max-width: 100%; height: 80vh;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imageModal-8" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content border-0">
+      <div class="modal-body p-0 d-flex justify-content-center align-items-center">
+        <img id="modalImage"
+             src="https://res.cloudinary.com/da1otatdb/image/upload/v1752569026/makanan2_tgioz8.png"
+             alt="Popup"
+             class="img-fluid rounded shadow"
+             style="max-width: 100%; height: 80vh;">
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 </body>
 </html>
